@@ -1,0 +1,54 @@
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #a38974, #e6d0b3); /* Gradiente aggiornato a tema logo */
+}
+
+.button-group {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+button {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #7e5c4b, #a67b5b); /* Colori pulsanti aggiornati */
+  color: white;
+  box-shadow: 0 4px 14px 0 rgba(126, 92, 75, 0.4);
+  border: none;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #664d3e, #8f6950); /* Colori pulsanti su hover aggiornati */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+button:disabled {
+  background: #d8d8d8;
+  color: #888;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.button-group button:nth-child(odd) {
+  background: linear-gradient(135deg, #a67b5b, #c49a77); /* Colori pulsanti alternati aggiornati */
+}
+
+.button-group button:nth-child(odd):hover {
+  background: linear-gradient(135deg, #8f6950, #b08a67); /* Colori pulsanti alternati su hover aggiornati */
+}
